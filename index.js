@@ -30,7 +30,7 @@ var npmPkgs = require('npm-pkgs');
  *
  * @name   npmPkgsFilter
  * @param  {String}   `<username>` non emptry string, npm username
- * @param  {String|Array|Function|RegExp}   `<patterns>` filter
+ * @param  {String|Array|Function|RegExp}   `<patterns>` pass to [is-match][is-match]
  * @param  {Function} `<callback>` node-style callback `(err, res)`
  * @api public
  */

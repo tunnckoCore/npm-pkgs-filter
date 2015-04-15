@@ -6,7 +6,6 @@
 ```
 npm i --save npm-pkgs-filter
 npm test
-npm-pkgs --help
 ```
 
 
@@ -17,7 +16,7 @@ npm-pkgs --help
 > Filter packages of the given [npmjs.com](http://npm.im) user, using glob pattern, function, array or regex
 
 - `<username>` **{String}**  non emptry string, npm username
-- `[patterns]` **{String|Array|Function|RegExp}**  filter
+- `[patterns]` **{String|Array|Function|RegExp}**  pass to [is-match][is-match]
 - `<callback>` **{Function}** node-style callback `(err, res)`
 
 **Example**
@@ -32,6 +31,15 @@ npmPkgsFilter('tunnckocore', 'jstransformer-*', function _cb(err, res) {
   console.log(res);
 });
 ```
+
+## Related
+- [npm-pkgs](https://github.com/tunnckoCore/npm-pkgs): List user`s npm packages from the npmjs.com website profile. API and CLI.
+- [npm-pkgs-count](https://github.com/tunnckoCore/npm-pkgs-count): Count npm user packages from npmjs.com website profile. API and CLI.
+- [npm-related](https://github.com/tunnckoCore/npm-related): Thin wrapper on top of `helper-related` for generating a list of links to the homepages of related NPM projects.
+- [micromatch](https://github.com/jonschlinkert/micromatch): Glob matching for javascript/node.js. A drop-in replacement and faster alternative to minimatch and multimatch. Just use `micromatch.isMatch()` instead of `minimatch()`, or use `micromatch()` instead of `multimatch()`.
+- [is-match](https://github.com/jonschlinkert/is-match): Create a matching function from a glob pattern, regex, string, array or function.
+- [is-missing](https://github.com/tunnckoCore/is-missing): Check that given `name` or `user/repo` exists in npm registry or in github as organization/user repository.
+
 
 
 ## Author
@@ -70,6 +78,8 @@ Released under the [`MIT`][license-url] license.
 
 [contrib-more]: http://j.mp/1stW47C
 [contrib-graf]: https://github.com/tunnckoCore/npm-pkgs-filter/graphs/contributors
+
+[is-match]: https://github.com/jonschlinkert/is-match
 
 ***
 
