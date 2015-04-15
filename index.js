@@ -10,8 +10,6 @@
 var is = require('assertit').is;
 var matcher = require('is-match');
 var npmPkgs = require('npm-pkgs');
-// var fnName = require('fn-name');
-// var handle = require('handle-arguments');
 
 /**
  * Filter packages of the given [npmjs.com](http://npm.im) user,
@@ -44,9 +42,8 @@ module.exports = function npmPkgsFilter(username, patterns, callback) {
     if (!is.kindof.function(callback)) {
       throw new TypeError('[npm-pkgs-filter] expect `callback` to be function')
     }
-
     npmPkgs(username, function __npmPkgsFilterCallback(err, res) {
-      if (err) {
+      if (!is.kindof.null(err)) {
         callback(err);
         return;
       }
