@@ -1,6 +1,6 @@
 ## [![npm][npmjs-img]][npmjs-url] [![mit license][license-img]][license-url] [![build status][travis-img]][travis-url] [![coverage status][coveralls-img]][coveralls-url] [![deps status][daviddm-img]][daviddm-url]
 
-> Filter the list of user's npm packages from the npmjs.com website profile, using glob pattern, function, array or regex. You can use it as replacement for `npm-pkgs`.
+> Filter the list of user npm packages from the [npmjs.com](https://npmjs.com) using glob pattern, function, array or regex.
 
 ## Install
 ```
@@ -34,7 +34,7 @@ npmPkgsFilter('tunnckocore', 'jstransformer-*', function _cb(err, res) {
 
 ## Related
 - [npm-pkgs](https://github.com/tunnckoCore/npm-pkgs): List user`s npm packages from the npmjs.com website profile.
-- [npm-pkgs-cli](https://github.com/tunnckoCore/npm-pkgs-cli): CLI for listing and filtering user npm packages from the npmjs.com!  Using `tunnckoCore/npm-pkgs-filter`
+- [npm-pkgs-cli](https://github.com/tunnckoCore/npm-pkgs-cli): CLI for listing and filtering user npm packages from the [npmjs.com](https://npmjs.com)!  Using `tunnckoCore/npm-pkgs-filter`
 - [npm-pkgs-count](https://github.com/tunnckoCore/npm-pkgs-count): Count npm user packages from npmjs.com website profile. API and CLI.
 - [npm-related](https://github.com/tunnckoCore/npm-related): Thin wrapper on top of `helper-related` for generating a list of links to the homepages of related NPM projects.
 - [micromatch](https://github.com/jonschlinkert/micromatch): Glob matching for javascript/node.js. A drop-in replacement and faster alternative to minimatch and multimatch. Just use `micromatch.isMatch()` instead of `minimatch()`, or use `micromatch()` instead of `multimatch()`.
