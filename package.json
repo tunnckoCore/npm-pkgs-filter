@@ -38,7 +38,7 @@
   "dependencies": {
     "assertit": "^0.1.0",
     "is-match": "^0.1.0",
-    "npm-pkgs": "~1.0.2"
+    "npm-pkgs": "~2.0.0"
   },
   "devDependencies": {
     "istanbul-harmony": "~0.3.1"
