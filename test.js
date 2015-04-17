@@ -85,7 +85,7 @@ test('npm-pkgs-filter:', function() {
   });
   test('should error when non existing user given', function(done) {
     npmPkgsFilter('fjk43hkjhhhhhhhhhhhhhhhkjgg3k4g234', function _cb(err, res) {
-      test.is.error(err);
+      test.is.object(err);
       test.is.number(err.code);
       test.is.undefined(res);
       test.equal(err instanceof Error, true);
@@ -95,7 +95,7 @@ test('npm-pkgs-filter:', function() {
   });
   test('should error when non existing user and filter patterns given', function(done) {
     npmPkgsFilter('fjk43hkjhhhhhhhhhhhhhhhkjgg3k4g234', ['*js*', 'npm-*'], function _cb(err, res) {
-      test.is.error(err);
+      test.is.object(err);
       test.is.number(err.code);
       test.is.undefined(res);
       test.equal(err instanceof Error, true);
