@@ -18,16 +18,18 @@
     "url": "git://github.com/tunnckoCore/npm-pkgs-filter.git"
   },
   "keywords": [
-    "cli",
     "filter",
     "get",
+    "glob",
     "helper",
     "list",
     "npm",
     "packages",
+    "patterns",
     "pkg",
     "pkgs",
     "profile",
+    "regex",
     "user",
     "utils"
   ],
