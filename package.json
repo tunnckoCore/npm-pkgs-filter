@@ -1,6 +1,6 @@
 {
   "name": "npm-pkgs-filter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Filter the list of user npm packages from the [npmjs.com](https://npmjs.com) using glob pattern, function, array or regex.",
   "scripts": {
     "lint": "jshint index.js && jscs index.js --reporter inline",
